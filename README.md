@@ -35,3 +35,40 @@ Isolated non-domestic activity by excluding all traffic originating from Mexico 
 ---
 *“Dios es mi escudo y mi fortaleza”*
 [Download the full SQL Forensics Report (PDF)](./SQL_Forensics_Report_Jonny.pdf)
+
+---
+
+# Análisis Forense con SQL: Investigación de Anomalías y Registros de Acceso 🔍🛡️
+
+## Descripción del Proyecto 
+En este proyecto, asumo el rol de analista de seguridad encargado de investigar posibles incidentes mediante el análisis de registros de acceso y datos de empleados. El objetivo es aplicar lógica de filtrado avanzada en SQL para identificar vulnerabilidades y organizar información crítica para las actualizaciones de seguridad del sistema.
+
+## Herramientas Utilizadas
+* **Sistema de Gestión de Bases de Datos:** MariaDB / MySQL
+* **Lenguaje:** SQL (Structured Query Language)
+* **Operadores Clave:** AND, OR, NOT , LIKE, % (Comodín)
+
+## Investigaciones de Seguridad Clave
+
+### 1. Análisis de Intentos de Inicio de Sesión Fallidos 
+Filtré los registros de acceso para identificar intentos fallidos (success = 0) ocurridos después de las **18:00** con el fin de detectar posibles patrones de fuerza bruta fuera del horario laboral.
+
+### Investigación de Incidentes Específicos
+Investigué un evento sospechoso ocurrido entre el **8 y el 9 de mayo de 2022**, utilizando el operador OR para recuperar registros de ambas fechas críticas.
+
+###  Filtrado de Tráfico Geográfico
+Para reducir el "ruido" en la investigación, excluí los intentos de inicio de sesión que no se originaron en México utilizando los operadores NOT y LIKE con el patrón 'MEX%'.
+
+### 4. Gestión de Activos Organizacionales
+* **Actualización en Marketing:** Identifiqué empleados en el **Edificio Este** para actualizaciones de seguridad dirigidas usando LIKE 'East%'.
+* **Departamentos Prioritarios:** Segmenté a los equipos de **Finanzas** y **Ventas** para actualizaciones de sistema de alta prioridad.
+* **Personal No Técnico:** Identifiqué a todos los empleados fuera del departamento de **Tecnología de la Información** para completar las fases finales de parches de seguridad
+
+## [cite_start]Habilidades Técnicas Demostradas
+* **Filtrado de Datos Avanzado:** Implementación de operadores lógicos complejos para aislar amenazas de seguridad.
+* **Búsqueda de Patrones:** Uso experto del comodín % para la recuperación de datos flexible y precisa.
+* **Fortalecimiento de la Ciberseguridad:** Extracción de información procesable para proteger los activos de información de la organización.
+
+---
+*“Dios es mi escudo y mi fortaleza”*
+[Download the full SQL Report version Español (PDF)](./Sql-Analisis-Seguridad-filtrado-Amenazas-control-datos.pdf)
