@@ -1,4 +1,4 @@
-# SQL-Security-Forensics-Access-Logs
+# SQL-Security-Operations: Advanced Filtering & Relational Attribution
 QL investigation of security incidents, filtering failed logins, and managing organizational assets through advanced queries.
 
 # SQL Forensics: Investigating Security Anomalies & Access Logs 🔍🛡️
@@ -33,11 +33,14 @@ Isolated non-domestic activity by excluding all traffic originating from Mexico 
 * **Data Integrity & Compliance:** Extracting actionable insights to strengthen the organization's security posture.
 
 ---
-*“Dios es mi escudo y mi fortaleza”*
+*“God is my Shield and my Strength.”*
 [Download the full SQL Forensics Report (PDF)](./SQL_Forensics_Report_Jonny.pdf)
 
 ---
+Advanced Relational Analysis (Asset Correlation)
 
+* Shadow IT Detection: Leveraged LEFT JOIN operations to cross-reference hardware inventory against the employee database, identifying unauthorized or "orphan" devices. * Incident Attribution: Correlated the event table (log_in_attempts) with the identity table (employees) to map security alerts to specific users and roles. * SYSTEM LOBO Optimization: All queries were validated and stress-tested in a Kali Linux laboratory environment, ensuring efficient resource allocation and high-performance data retrieval
+---
 # Análisis Forense con SQL: Investigación de Anomalías y Registros de Acceso 🔍🛡️
 
 ## Descripción del Proyecto 
